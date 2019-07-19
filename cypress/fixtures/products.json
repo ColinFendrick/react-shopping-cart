@@ -1,0 +1,17 @@
+{
+  "products": [
+    { 
+      "availableSizes": ["S", "XS", "M"],
+      "currencyFormat": "$",
+      "currencyId": "USD",
+      "description": "4 MSL",
+      "id": 12,
+      "installments": 9,
+      "isFreeShipping": true,
+      "price": 666,
+      "sku": 12064273040195392,
+      "style": "Black with custom print",
+      "title": "Cat Tee Black T-Shirt"
+    }
+  ]
+}
