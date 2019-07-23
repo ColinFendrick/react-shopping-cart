@@ -1,5 +1,6 @@
 describe('Testing the text filtering', () => {
   it('Sorts, adds to cart, checks out', () => {
+    // Create a function stub to confirm that the alert pops up
     const stub = cy.stub()
 
     cy.on('window:alert', stub)
@@ -14,9 +15,10 @@ describe('Testing the text filtering', () => {
   })
 
   it('Does all of the above, but with a fixture!', () => {
-    // Stub our products call
+    // Mock our products call
     cy.server().fixture('products').as('productsJSON')
       .route('/products.json', '@productsJSON')
+    // Rest of the code is the same as above except with new result
     const stub = cy.stub()
 
     cy.on('window:alert', stub)
